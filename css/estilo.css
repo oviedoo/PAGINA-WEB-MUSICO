@@ -1,0 +1,441 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #efefef;
+}
+
+h1 {
+  font-size: 3.5em;
+}
+h2 {
+  font-size: 2.7em;
+  margin-bottom: 5px;
+}
+h3 {
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+p {
+  font-size: 1.25em;
+}
+ul {
+  list-style: none;
+}
+li {
+  font-size: 1.25em;
+}
+
+.colorAma {
+  color: #dfdf00;
+}
+
+button {
+  background: #c8df20;
+  font-size: 1em;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: 2px solid #000;
+  cursor: pointer;
+  box-shadow: 2px 2px 10px #000;
+  color: #fff;
+}
+
+button:hover {
+  background: #96a718;
+  color: #dfdfdf;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+.info {
+  margin: auto;
+}
+.header {
+  display: flex;
+}
+.header__conteiner {
+  background: rgb(245, 245, 245);
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+}
+
+.logo {
+  margin: 0 1000px 0 0;
+  padding: 25px 30px;
+  font-weight: bold;
+  color: #dfdf00;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1.6em;
+}
+
+/*
+header nav {
+  display: flex;
+  text-align: center;
+  padding-bottom: 25px;
+}*/
+
+.link {
+  padding: 5px 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+}
+
+.link:hover {
+  color: #dfdf00;
+}
+
+#hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  color: #fff;
+  background-image: linear-gradient(
+      0deg,
+      rgba(5, 7, 12, 0.75),
+      rgba(5, 7, 12, 0.75)
+    ),
+    url("/leo.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+#hero h1 {
+  color: #fff;
+  font-size: 3em;
+  margin-bottom: 25px;
+}
+
+#hero button {
+  font-size: 1.2em;
+  padding: 25px 45px;
+}
+/* -----SOY PERCUCIONISTA ----*/
+
+#soyPer .container {
+  display: flex;
+  text-align: center;
+  padding: 100px 12px;
+}
+
+#soyPer .container h2 {
+  font-size: 2.5em;
+}
+#soyPer .img {
+  height: 500px;
+  width: 450px;
+  margin: 0 10px;
+}
+.texto {
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+}
+.texto h2 {
+  padding: 10px;
+}
+
+/* ----MIS INSTRUMENTOS-----*/
+#misInstrumentos {
+  background: rgb(30, 30, 30);
+  color: white;
+  text-align: center;
+}
+
+#misInstrumentos .container {
+  padding: 100px 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+}
+.instrumentos {
+  display: flex;
+}
+
+#misInstrumentos h2 {
+  margin-top: 0;
+  font-size: 3em;
+}
+#misInstrumentos h3 {
+  font-size: 1.8em;
+  margin-bottom: 5px;
+}
+
+#misInstrumentos .percu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-size: cover;
+  background-position: center center;
+  margin: 15px;
+  padding: 50px;
+  border-radius: 5px;
+  height: 400px;
+  width: 300px;
+}
+
+.percu:first-child {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("/tambora.jpg");
+}
+
+.percu:nth-child(2) {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("/guiro.jpg");
+}
+
+.percu:last-child {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 0.5)
+    ),
+    url("/kongas.jpg");
+}
+
+/*-----listo para tocar-----*/
+#listoParaTocar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: rgb(245, 245, 245);
+  color: #000;
+  height: 100vh;
+}
+
+#listoParaTocar button {
+  padding: 25px 45px;
+  font-size: 1.3em;
+}
+
+#listoParaTocar h1 {
+  font-size: 2.5em;
+  margin-bottom: 25px;
+}
+
+footer {
+  background: rgb(30, 30, 30);
+  cursor: pointer;
+}
+
+footer a {
+  margin: 0px 0px 10px 0px;
+  padding: 12px;
+  color: #dfdf00;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+footer .container {
+  height: 110px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer h2 {
+  font-size: 0.8em;
+  color: #efefef;
+}
+
+@media (max-width: 1440px) {
+  /*----HEADER-----*/
+  .logo {
+    margin: 0 800px 0 0;
+  }
+}
+
+@media (max-width: 1024px) {
+  /*----HEADER-----*/
+  .logo {
+    margin: 0 400px 0 0;
+  }
+
+  #soyPer .container h2 {
+    font-size: 2em;
+  }
+  #soyPer .img {
+    height: 450px;
+    width: 400px;
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  /*----HEADER-----*/
+  .logo {
+    margin: 0 250px 0 0;
+  }
+
+  #hero {
+    background-position-x: -800px;
+  }
+  /*---SOY PERCUCIONISTA---*/
+  #soyPer {
+    height: 850px;
+  }
+  #soyPer .container {
+    flex-direction: column;
+  }
+  #soyPer .img {
+    margin: auto;
+    order: 2;
+  }
+
+  /*----MIS INSTRUMENTOS----*/
+  section {
+    height: 1500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #misInstrumentos .percu {
+    height: 350px;
+    width: 250px;
+  }
+  .instrumentos {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 425px) {
+  /*----HEADER-----*/
+  .logo {
+    margin: 0px;
+  }
+  .header {
+    flex-direction: column;
+  }
+  .header__conteiner {
+    justify-content: center;
+    flex-direction: column;
+    height: 120px;
+  }
+  .link {
+    flex-direction: column;
+  }
+  #hero {
+    background-position-x: -950px;
+  }
+  /*---SOY PERCUCIONISTA---*/
+  #soyPer .img {
+    height: 350px;
+    width: 300px;
+  }
+
+  /*----MIS INSTRUMENTOS----*/
+  #misInstrumentos h2 {
+    font-size: 2.2em;
+  }
+}
+
+@media (max-width: 375px) {
+  /*----HEADER-----*/
+  .logo {
+    margin: 0px;
+  }
+  .header {
+    flex-direction: column;
+  }
+  .header__conteiner {
+    justify-content: center;
+    flex-direction: column;
+    height: 120px;
+  }
+  .link {
+    flex-direction: column;
+  }
+  #hero h1 {
+    font-size: 2.5em;
+  }
+  #hero {
+    background-position-x: -970px;
+  }
+  /*---SOY PERCUCIONISTA---*/
+  #soyPer .img {
+    height: 320px;
+  }
+  #soyPer .container h2 {
+    font-size: 1.8em;
+  }
+  p {
+    font-size: 1.1em;
+  }
+
+  /*----MIS INSTRUMENTOS----*/
+  #misInstrumentos h2 {
+    font-size: 2.2em;
+  }
+
+  #listoParaTocar h2 {
+    font-size: 2em;
+    margin: 20px 0;
+  }
+}
+@media (max-width: 320px) {
+  /*----HEADER-----*/
+
+  #hero h1 {
+    font-size: 2em;
+  }
+  #hero {
+    background-position-x: -980px;
+  }
+  /*---SOY PERCUCIONISTA---*/
+  #soyPer .img {
+    height: 320px;
+  }
+  #soyPer .container h2 {
+    font-size: 1.5em;
+  }
+  p {
+    font-size: 1em;
+  }
+
+  /*----MIS INSTRUMENTOS----*/
+  #misInstrumentos h2 {
+    font-size: 1.9em;
+  }
+
+  #listoParaTocar h2 {
+    font-size: 1.5em;
+    margin: 20px 0;
+  }
+}
